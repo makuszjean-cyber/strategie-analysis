@@ -1,0 +1,25 @@
+(Transcrit par TurboScribe.ai. Passez à Illimité pour supprimer ce message.)
+
+Du coup, là, on va parler d'Order Flow. Alors, l'Order Flow, pour bien comprendre c'est quoi, c'est tout simplement des mitigations sur mitigation de l'offre au-delà de la demande. En gros, c'est tout simplement la bougie manipulatrice ou la bougie qui a pris l'argent, viendra récupérer l'ancien niveau, le niveau précédent, le niveau d'offre et de demande précédent à chaque fois.
+
+Et en gros, ça ressemblait à quoi ? Ça ressemblait à ça. En gros, ici, on voit qu'on a la bougie manipulatrice et la bougie qui a pris l'argent, on a l'argent à gauche, on pousse, cassure, impulsion, ici, retrassement, n'oublie pas, impulsion, retrassement. Et vous voyez que la bougie qui est là, la bougie verte qui est ici, vient récupérer tout simplement la bougie manipulatrice qui est là et la bougie qui a pris l'argent ici.
+
+On pousse, cassure, ici, vous voyez qu'on revient chercher cette bougie du coup qui a pris l'argent, l'indice qui a pris l'argent, on a un terme ici, on pousse, cassure, et à chaque fois, on vient rechercher le niveau de demande qui précédait. On est venu chercher celui-là, celui-là, celui-là, celui-là. Pareil pour l'argent.
+
+On pousse, cassure, bougie qui manipule, bougie qui prend l'argent qui a été récupérée ici. On pousse, cassure, bougie qui prend l'argent, bougie qui prend l'argent qui a récupéré le niveau d'offre précédent, on pousse, cassure, et ainsi de suite. Et ça, c'est un concept qu'on va appeler order flow sur le marché.
+
+Réellement maintenant, pour faire réellement comprendre l'order flow, on va passer sur les graphes. Je vais vous montrer un order flow haussier et un order flow baissier. Il faudra vraiment comprendre que ce soit du daily, que ce soit du 1h, que ce soit du 4h, que ce soit du 1 minute, l'order flow va fonctionner.
+
+Vous allez retrouver ce concept quand on prend une unité de temps. Et après, on verra qu'est-ce qu'en réalité cet order flow au final va créer sur le marché. On va voir aussi comment les trader.
+
+Et du coup, pour rappel, ça va bien rester dans votre tête, c'est des mitigations sur mitigation de l'offre ou de la demande. La bougie manipulatrice ou la bougie qui a pris l'argent, ça peut être même les deux, vient récupérer le niveau précédent d'offre ou de demande. Je monte ici.
+
+On mitige ce niveau de demande, ce niveau-là. On pousse ce niveau qui est là, vous allez mitiger ce niveau-là et récupérer ce niveau-là. On pousse, cas sûr, retracement ici.
+
+Impulsion, retracement. Et quand on vient retracer ici, le niveau qui est là, les bougies qui sont là, vient récupérer la bougie qui a pris l'argent ici et qui est venue récupérer le niveau précédent ici. Vous voyez ? Et ainsi de suite.
+
+On va dire que ça fait comme un escalier qui se suit. Vous voyez ? Les niveaux mitigation sur mitigation, tout simplement. Et là, maintenant, je vais vous montrer ça sur les graphes, réellement, pour que vous ayez un visuel sur ça, parce que c'est un concept qui est quand même assez important, assez intéressant, puisque quand vous ratez un trait tout en bas, ça va vous permettre de rentrer en position sur le marché en suivant Border Flow, en suivant les cassettes structures, impulsion BOS, retracement, et derrière, on suit l'Order Flow.
+
+Vous voyez ? Du coup, je vais vous montrer ça sur les graphes, et on verra comment on peut l'interpréter, comment on peut le détecter et comment le valider.
+
+(Transcrit par TurboScribe.ai. Passez à Illimité pour supprimer ce message.)

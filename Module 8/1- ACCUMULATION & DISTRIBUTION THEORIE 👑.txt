@@ -1,0 +1,209 @@
+(Transcrit par TurboScribe.ai. Passez à Illimité pour supprimer ce message.)
+
+Aujourd'hui, on va parler de Golden Setup et quand on va parler de Golden Setup, on va parler bien évidemment de la Wyckoff Théorie. Quand on parle de Golden Setup, tout simplement on va parler de distribution d'accumulation. Le Golden Setup, c'est tout simplement, comme sur mon exemple, un setup en or.
+
+Et en gros, ce setup en or, c'est un setup à haute probabilité, c'est-à-dire que réellement, c'est les setups que quand ils seront présents sur le marché, c'est les setups qu'on va privilégier sur le marché puisque tout simplement, c'est réellement les setups qui vont faire partir le marché. C'est là en gros où les big boys vont accumuler des positions et pour après repartir. Alors, pour commencer, on va parler de la Wyckoff Théorie, c'est-à-dire on va définir qu'est-ce que la Wyckoff Théorie et qui l'a créée.
+
+Alors la Wyckoff Théorie est une théorie mise en place par Richard Wyckoff, un des titans de l'analyse technique du XXe siècle. Il a créé un décompte qui va nous permettre de mieux comprendre les consolidations, les étapes de cette consolidation, les prises de liquidités, les intentions des big boys ainsi que de mieux cerner notre biais directionnel sur le marché. Ce décompte va nous permettre également d'avoir des prix d'entrée optimales ainsi que des stop-loss optimisés, c'est-à-dire des stop-loss qui seront plus raffinés.
+
+Attention, quand je dis raffiné, je ne veux pas dire affiné. On verra ça dans un prochain module, la différence réellement entre raffiné et affiné. Alors, du coup, comme j'ai dit, Richard Wyckoff, c'est celui qui a inventé la Wyckoff Théorie, c'est celui qui a inventé le décompte des distributions et des accumulations.
+
+Et il faut savoir que, comme j'ai dit, c'est un des titans de l'analyse technique. Mais Richard Wyckoff, il était du XXe siècle, c'est-à-dire début XXe siècle. Et là, en gros, ce que je suis en train de vous dire, c'est que ce qui marchait il y a 100 ans sur le marché, ce qui fonctionnait il y a 100 ans sur le marché, fonctionne aujourd'hui.
+
+Et je répète, il a créé un décompte qui va nous permettre de mieux comprendre les consolidations, les étapes de la consolidation, les prises de liquidités, les intentions des big boys, mais également de mieux cerner le biais directionnel du marché. Alors, on va attaquer par ce qu'on appelle l'accumulation type 1. On va voir de quoi est composée l'accumulation type 1. Déjà, dans un premier temps, il est composé de cinq phases. Vous voyez, phase A, phase B, phase C, phase D, phase E. Toujours, que ce soit une accumulation, que ce soit une distribution, le marché sera toujours composé de cinq phases.
+
+Alors, nous, l'objectif, vraiment, c'est d'entrer dans la phase C, sur le test de la prise de liquidités. Toujours, l'objectif, en tant que SMB trader, quand on a un Golden Setup, des setups à haute probabilité, notre objectif, c'est réellement d'entrer dans la phase C. Alors, ici, notre Golden Setup, il est composé de quoi ? Notre accumulation est composée de quoi ? Il est composé de plusieurs appellations, comme vous pouvez le voir, sur des highs et sur des lows. On va comprendre ces appellations.
+
+Alors, nous, là, l'objectif, réellement, c'est de comprendre tout ce qui se passe dans cette consolidation de prix jusqu'à l'entrée ici. Après, tout ce qui sera là-dedans, ça va être de la concept entry, c'est-à-dire qu'on rentre son Golden Setup. Et ça, on va le voir, notamment, après, dans un prochain module, du coup.
+
+Dans un prochain module, dans le module 9, on va voir ça, la concept entry. Et là, en gros, ici, on voit quoi ? On voit qu'on a le PS. PS, pour vous indiquer ce que veut dire PS, de toute façon, tous les termes qu'il y aura ici, vous allez le retrouver dans l'e-book, dans l'ultra-book de la Strat, qui sera dispo dans le Discord.
+
+Du coup, ne vous inquiétez pas. Si vous voulez les définitions, elles seront dispo dans l'e-book, comme je vous ai dit. Et nous, on va vraiment comprendre qu'est-ce qu'un PS va faire, qu'est-ce qu'un SC va faire, et ainsi de chez.
+
+Alors, déjà, on a le PS. Le PS qui est tout simplement le point qui va essayer d'arrêter la rente, mais qui va toujours échouer. Il essaie toujours d'arrêter la rente, mais il échoue.
+
+Vous voyez qu'ici, on pousse, le haut, on retrace, et on échoue. On pousse toujours à l'avant. C'est-à-dire qu'on a toujours donné le high, le low, le high, le low.
+
+Ici, il n'a rien créé. Il n'a pas créé de consolidation. Pour opérer tout ce qui est PS, SC, tout ça, on verra qu'il faut que les étapes s'enchaînent.
+
+On ne peut pas opérer ça en amont. On ne peut pas arriver ici et voir ça, ça, le high, et se dire que c'est un PS. Non, il faut voir les étapes derrière.
+
+Mais là, on voit que c'est un PS. Un mouvement qui essaie d'arrêter la rente. Il essaie toujours d'arrêter la rente, mais il échoue.
+
+Après, on a le SC. Le SC qui est tout simplement le low qui va réussir à arrêter la rente, à mettre la rente en pause. C'est-à-dire qu'ici, on voit qu'on pousse, SC arrête la rente.
+
+Derrière, SC arrête la rente et nous donne, comme vous le voyez ici, le bas de notre fourchette de travail, le bas de notre fourchette de travail en vert. SC va délimiter le bas de notre fourchette de travail. Mais attention, SC, on peut le définir qu'après coup d'avoir vu les autres étapes.
+
+C'est-à-dire avoir vu quoi ? Avoir vu que le marché devenait latéral et après avoir vu, surtout le SC, ST. On verra ça juste après. Alors, SC arrête la rente. Premier signe, changement de caractère qui va suivre derrière.
+
+SC arrête la rente, on pousse. AR, élargissement de la fourchette. Le AR est là pour élargir la fourchette de travail et du coup, nous fixer notre fourchette haute.
+
+Par la suite, SC, AR, ST. ST vient tester le SC et c'est là que tout simplement, tout simplement, le changement de caractère du marché se met en place. Le changement de caractère du marché est en train de se mettre en place. SC, AR, ST. On vient tester le SC.
+
+Et logiquement, regardez, si on parle structure, on ne doit pas avoir ça, puisque si on parle structure, logiquement ici c'est le high. Là c'était low-low, low-high, low-low, low-high, high-low. On crée un high-low par rapport au SC.
+
+Dans une structure baissière, vous ne devez pas avoir low-high, low-low, low-high, high-low, high-high. Ici, vous voyez qu'on crée high-high. Et là, ici ça va être quoi ? Ça va être tout simplement notre UA.
+
+UA qui est ici. UA qui tout simplement, sa mission c'est quoi ? C'est de venir prendre l'AR, prendre la liquidité du AR et parfois même, c'est lui qui va nous montrer l'intention d'achat des big boys dans une accumulation. C'est lui qui nous montre l'intention d'achat des big boys parfois ou des fois il viendra juste prendre la liquidité du AR et l'intention d'achat se mettra en place par la suite.
+
+Mais là, il vient tout simplement nous montrer l'intention d'achat des big boys ici puisque regardez, low-high, BOS. Là, on a bien low-high, low-low, low-high, high-low. On pousse, on prend la liquidité du AR, on casse la structure, le low-high qui est là, high-high, high-low.
+
+Après, bien sûr, il faudra venir prendre la liquidité du SC-ST parce que SC-ST va toujours sauter sur le marché. SC-ST vont toujours sauter. Du coup, là on reconnaît dans l'accumulation type 1, on a le STB dans un premier temps.
+
+Notre STB qui est la première prise de liquidité du SC-ST. Après, on va voir qu'on peut avoir également le spring dans la phase C. Le spring qui est tout simplement la deuxième prise de liquidité possible. Après, il n'est pas obligatoire.
+
+On va le voir qu'il n'est pas obligatoire, mais là, spring. Et comme son nom l'indique, c'est un spring. C'est-à-dire que c'est réellement un mouvement brutal du marché qui vient prendre la liquidité du STB.
+
+STB qui a pris la liquidité du SC-ST. Spring qui prend la liquidité du STB. Derrière, on pousse, test et on part.
+
+Et nous, l'objectif, c'est d'entrer à ce niveau-là, sur le test, sur la prise de liquidité. Bien sûr, des fois, vous allez subir un stop-loss puisque vous avez eu STB et que vous voulez rentrer sur le test du STB. Après, on verra une petite technique pour réduire la probabilité de stop à ce moment-là et de savoir, entre guillemets, bien sûr, s'il y aura un spring ou pas.
+
+Parce qu'on ne le saura pas, mais on peut diminuer la probabilité de savoir s'il y aura un spring ou pas. Alors, du coup, comme je vous ai indiqué, spring, deuxième prise de liquidité ici, qui vient prendre la liquidité du STB. On pousse, bien sûr, avec des cassures à l'intérieur et tout.
+
+On revient, test. Et nous, l'objectif, c'est d'entrer ici à l'achat. Après, tout ce qui est dans la phase D à la phase E, ça, on le verra plus tard sous forme de concept entry, c'est-à-dire que notre golden setup, il est là.
+
+Notre objectif premier, c'est d'être sur le test de la prise de liquidité. Nous, on veut rentrer après la prise de liquidité. Ici, c'est si tu as raté ton golden setup, tu rentres après.
+
+On n'oublie pas, sur le marché, on a deux types d'entrées. On a tout simplement le golden setup et la concept entry. La concept entry, c'est l'entrée quand il n'y a pas de golden setup ou après golden setup.
+
+Ça dépend. S'il n'y a pas de golden setup, on rentre sur de la concept entry. S'il y a du golden setup et qu'on a raté l'entrée sur le test de la prise de liquidité, nous, on rentre sur de la concept entry.
+
+Ce qui se passe après. On suit le flot. Maintenant, on va voir l'accumulation type 2. C'est la même chose que l'accumulation type 1, sauf qu'ici, on va observer qu'on n'a qu'une seule prise de liquidité.
+
+On n'a que le STB. On n'a pas le spring. Je me répète, on a toujours ce PS.
+
+Le PS qui est un point qui va essayer d'arrêter la vente, mais qui va toujours échouer. Il essaie d'arrêter la vente, on pousse, il échoue. Du coup, on voit bien qu'on a low high, low low, low high, low low.
+
+Low high, high low, high high. Par contre, attention, on ne peut pas savoir en amont si ça, dès que ça se crée ici, est-ce que c'est un C. Il faut avoir les étapes derrière, les étapes qui se mettent en place pour réellement se rendre compte qu'on est dans une consolidation, qu'on est dans une accumulation, puisqu'il faut avoir un C, voir qu'on a eu un low ici qui a arrêté la vente, qui nous crée potentiellement une fourchette. Vous voyez qu'après, on retrace l'arrachement de la fourchette.
+
+Pour l'instant, je vois quoi ? Low high, low low, low high. Je ne vois rien de plus. Low high, low low, low high.
+
+Pour l'instant, on ne sait pas. Par contre, derrière, c'est le premier signe du changement de caractère, ce qu'on appelle aussi le CHOS, le changement de caractère. Ici, SC, AR, ST. Vous voyez qu'on vient tester le SC.
+
+On verra plus tard qu'est-ce qu'on vient réellement tester à ce niveau-là. Mais AR, ST, on vient tester notre SC. Et en relancant, on crée votre faille, comme on le dit depuis le début.
+
+On crée votre faille ici. Le faille qui est créé, vous voyez qu'ici, du coup, on renforce quoi ? On renforce la liquidité. On renforce la liquidité du SC, parce qu'on n'oublie pas, tout high et tout low sur le marché sont des niveaux de liquidité.
+
+Mais là, en venant tester ce niveau-là sans le prendre, on renforce la liquidité. Arrêt, test, on pousse. On prend la liquidité du AR avec UA.
+
+Alors, on n'oublie pas, UA peut être juste prise de liquidité, comme elle peut être aussi intention d'achat si j'ai un BOS, notre dernier low high qui a été donné sur le marché ici. Derrière, SC, on n'oublie pas, donne la fourchette basse, arrête la vente. AR, élargit la fourchette de travail et donne la fourchette haute, du coup.
+
+ST vient tester notre SC et renforce sa liquidité. UA vient prendre la liquidité du AR, soit avec un BOS, soit avec juste une prise de liquidité. Et s'il vient, on n'oublie pas, s'il vient avec un BOS, c'est tout simplement notre intention d'achat sur le marché.
+
+Après, comme je vous l'ai dit, l'intention d'achat peut se faire après. Par exemple ici, on pousse, cas sûr, on revient, test, on repart. C'est également possible.
+
+Mais là, dans ce cas-là, il est ici. On voit bien qu'on a BOS à structure. Du coup, STB qui vient prendre la liquidité du SC, du SC-ST, on n'oublie pas, SC-ST vont toujours sauter sur le marché.
+
+Ici, STB, prise de liquidité du SC. Et là, on a vu qu'on est dans l'accumulation type 2 et dans l'accumulation type 2, nous n'avons qu'une seule prise de liquidité, qui est notre STB. Et derrière, vous voyez ce qu'on appelle le LPS.
+
+Vous pouvez aussi l'appeler le test, parce qu'en réalité, c'est un test. C'est juste un nom donné à cette étape. Mais là, ici, on a le LPS.
+
+Et vous voyez qu'ici, STB, LPS, ce LPS vient tout simplement nous donner une indication sur est-ce qu'il y aura le Spring ou pas. Je vous explique. En gros, ici, STB, quand on vient tester le STB, si on vous donne une nouvelle consolidation sur votre STB, si une consolidation se crée sur votre STB, cela va diminuer la probabilité d'avoir un Spring.
+
+Si, je me répète, si on vient tester votre STB en venant accumuler, comme on le voit ici, en venant consolider sur votre STB, cela va diminuer le fait d'avoir un Spring. Puisqu'on n'oublie pas, le Spring, c'est un mouvement brutal qui va reprendre la liquidité du STB avant de repartir, tester, repartir. Du coup, toujours entrer dans la phase C après la prise de liquidité.
+
+Maintenant, on va attaquer tout simplement ce qui est les phases de distribution, la théorie de la distribution. Et après, on enchaîne sur les graphes. Et du coup, on se retrouve pour la distribution.
+
+On se retrouve pour la distribution. Et là, on va parler tout simplement, dans un premier temps, de la distribution type 1. Cela va avoir le même fonctionnement qu'une accumulation. Mais sauf que là, on va avoir tout simplement de la vente.
+
+On n'oublie pas. Distribution qui est un processus mis en place par les big boys pour faire chuter le marché. L'accumulation est un processus mis en place par les big boys pour faire monter le marché.
+
+Là, vous voyez que nous avons le premier point, c'est le PSY. PSY, tout simplement, qui va être le point qui va essayer d'arrêter l'achat, mais qui va toujours échouer. Et pourquoi il échoue ? Parce que bien souvent, ça va être tout simplement quoi, les gars ? Ça va être le support, du coup, la résistance des retails très durs.
+
+Et pour le PS, ça va être tout simplement le support des retails très durs. C'est pour ça qu'il va échouer. Parce que derrière, on vient prendre les liquidités de ces retails très durs.
+
+Et là, on a quoi ? PSY, il essaie toujours d'arrêter l'achat, mais il échoue. Ici, vous avez le BC. Lui, par contre, il réussit à arrêter l'achat pour l'instant.
+
+Mais là, pour l'instant, les gars, quand vous êtes là, vous ne pouvez pas savoir que c'est un BC. Vous ne pouvez pas savoir que c'est un BC. Vous saurez que c'est un BC quand vous aurez vu derrière les différentes étapes qui vont s'enchaîner.
+
+C'est-à-dire que vous voyez qu'ici, on arrête. Pour l'instant, c'est que high, high, high, low, high, high, high, low. Par contre, vous voyez que là, on commence à créer une consolidation.
+
+Les bougies qui se consolident entre eux, ils commencent à se compresser. Compression de bougie. Ça, c'est un signe de consolidation aussi, les gars.
+
+Compression de bougie entre eux. On vient tester le BC qui est là. Du coup, on regarde high, high, high, low, low, high.
+
+Derrière, vous voyez qu'on pousse. On vient chercher le high, low qui est là. Là, vous avez votre changement de caractère qui est en train de se mettre en place devant vous.
+
+Et là, vous pouvez dire, ça, c'est un BC. Le point qui arrête l'achat. Ça, c'est un AR.
+
+L'élargissement de la fourchette. Vous voyez, BC qui vous place la fourchette haute. AR qui permet de placer la fourchette basse.
+
+ST qui vient tester le BC. MSO qui vient prendre la liquidité du AR, soit avec un BOS, soit avec une prise de liquidité. Du coup, si ça va être un BOS, ça va être tout simplement notre intention de vente ici.
+
+Intention de vente qui est donnée puisqu'on vient de BOS ici. MSO. Derrière, on pousse.
+
+On vient prendre la liquidité du BC, ST. BC, ST qui vont toujours sauter, les gars. BC, ST vont toujours sauter. C'est comme le SC, ST, ils s'attrapent toujours.
+
+C'est des niveaux de liquidité qui a créé. C'est des niveaux de faille qui a été créé. On arrête.
+
+On teste. On renforce sa liquidité quand on fait ça. Tout simplement, le prix consolide.
+
+Prise de liquidité UT qui prend le BC. Première prise de liquidité. On est dans la distribution type 1. Du coup, on a deux prises de liquidité UT.
+
+Vous voyez que pour construire le mouvement qui va prendre la liquidité, on a construit une structure haussière. High-high, high-low, high-high, high-low. Première prise de liquidité qui est l'UT.
+
+High-high, impulsion, BOS. Deuxième prise de liquidité qui est l'UTAC, qui vient prendre la liquidité de l'UT. Test.
+
+Et par la suite, on part. Et par la suite, on part. Et nous, on verra que l'objectif, c'est d'entrer dans la phase C, parce que là, on a toujours cinq phases.
+
+Phase A, phase B, phase C, phase D, phase E. L'objectif, c'est d'entrer dans la phase C après la prise de liquidité. Après, ici, sur le test de l'UTAC. Après, on a les LPSC directs.
+
+On verra que le LPSC direct, ça va être tout simplement de la conseil French. C'est-à-dire que vous avez raté votre entrée ici. Vous allez suivre des confirmations plus loin pour rentrer sur le marché.
+
+Ici, du coup, on voit réellement qu'on a une distribution et que ces confirmations nous permettent d'entrer. Ce décompte va nous permettre d'entrer ici. Après, attention.
+
+Attention de ne pas voir du week-off partout sur le marché, parce que ça, c'est la plus grosse erreur de tout débutant de la SMV. C'est-à-dire qu'il va y avoir tel concept partout. C'est pareil pour tous les concepts.
+
+Il faut trouver un équilibre, les gars. Il ne faut pas se biaiser. Il ne faut pas se dire, là, c'est une distribution, là, c'est une distribution, là, c'est une distribution.
+
+Et vous ne comprenez même plus le sens du marché. Réellement, il faut avoir les étapes un par un. Il faut avoir les confirmations.
+
+Il faut avoir tout. Il faut avoir l'arrêt de la tendance, le marché qui devient latéral, les fourchettes qui sont là, les tests qui sont là, qui vous construisent la liquidité. On est sur un niveau d'offre décisionnel.
+
+On a pris la liquidité, on a donné l'intention, l'intention qui est très importante. On a la prise de liquidité. On rentre sur le test de la prise de liquidité.
+
+Si on n'a pas tout ça, on ne peut pas se dire que c'est une distribution. On ne peut pas se dire que c'est une accumulation. Non, les gars.
+
+Il faut vraiment avoir les étapes un par un et ne pas se contenter de ces trucs. Parce que ça, peut-être que lui, il a pris une liquidité à gauche. Derrière, il y a un high, high, high, low.
+
+High, high. High, low. Il a déjà pris une liquidité.
+
+On vient de tester. Et derrière, il est BOS. C'est une suite d'order flow.
+
+Il n'y avait même pas de latéralisation du marché. Le marché ne devenait pas latéral. Vous voyez ? Changement de caractère sans golden setup.
+
+C'est possible. Il faut vraiment voir tous les éléments. Tous les éléments devant nous.
+
+Et je précise, je reprécise, B, C, S, T vont toujours sauter. Et du coup, là, on va passer sur la distribution type 2. Distribution type 2, là, vous voyez quoi ? PSY, pareil. Il essaie d'arrêter l'achat, mais il va toujours échouer.
+
+BC, c'est là, on n'oublie pas, où les résistances d'hélicoptère sont placées. Vous voyez qu'il y a toujours 5 phases. A, B, C, D, E. Et nous, on veut toujours entrer dans la phase C. BC, il arrête l'achat.
+
+Par contre, on n'oublie pas, pour le nommer, pour pouvoir le placer sur le marché, il faut avoir différentes étapes qui ont déjà été mises en place. C'est-à-dire qu'ici, BC, AR. Vous voyez que BC, il permet de placer la fourchette haute.
+
+AR, élargir la fourchette. Du coup, là, pour l'instant, on ne voit que High High et High Low. On n'a rien placé encore.
+
+Par contre, derrière, test. On crée un fail. Attention.
+
+Là, on peut commencer à penser à placer tout ça, mais on n'a pas encore placé. Le marché devient latéral. Là, on le voit, les gars.
+
+Regardez. Ici, on le voit, il devient latéral. Il devient latéral.
+
+Du coup, BC, AR, ST. On pousse K sur du High Low qui est là, avec le MSO. Le MSO, n'oublie pas qu'il peut soit venir prendre la liquidité du AR avec un BOS, soit juste avec une prise de liquidité. S'il nous donne le BOS, le MSO, s'il nous donne le BOS, c'est également notre intention de vente.
+
+S'il ne nous donne pas le BOS, l'intention de vente viendra après. Ce n'est pas un problème. Ici, on est dans la distribution type 2. Du coup, on n'a qu'une seule prise de liquidité qui est l'UT, qui est notre UT.
+
+Et là, vous voyez qu'on a pris le BC avec UT. On pousse. Et là, pour comprendre, pour réduire le risque, en gros pour savoir si on a moins de probabilité d'avoir un UT ou pas, comment on peut le savoir ? C'est que sur l'UT, le marché va faire la même chose.
+
+Il va venir consolider. Il va revenir créer une consolidation. Le prix va pousser, revenir, ralentir, faire un travail de liquidité.
+
+Les bougies vont se compresser. Avant de repartir. Du coup, là, je vous ai vraiment expliqué toutes les phases, les distribs et les accumulations.
+
+On va attaquer ça. On va vous montrer ça sur les graphes. On va vous montrer de la pratique, parce qu'il n'y a rien de mieux.
+
+On va aller sur les graphes et je vais vous montrer réellement comment on peut mettre ça en pratique. Parce qu'il y a toutes ces étapes-là, mais il faut rester quand même flexible. Parce que des fois, ils ne seront pas dans l'ordre.
+
+En tout cas, ce qui est sûr qu'il sera dans l'ordre, c'est ça. C'est PSY, BC, AR, ST. Ça, c'est toujours dans l'ordre. Après, le MSO, il peut venir soit après prise de liquidité, soit avant prise de liquidité.
+
+Du coup, maintenant, on va attaquer tout ça sur les graphes. Et on va voir différentes catégories.
+
+(Transcrit par TurboScribe.ai. Passez à Illimité pour supprimer ce message.)
