@@ -1,0 +1,10 @@
+# ============================================
+# VODACOM RDC - AS36943
+# Plages IPv4 connues
+# A verifier sur bgpview.io/asn/36943
+# ============================================
+
+# Ajoute ici les plages CIDR de Vodacom RDC
+# Tu peux les trouver sur:
+#   https://bgpview.io/asn/36943
+#   https://ipinfo.io/AS36943

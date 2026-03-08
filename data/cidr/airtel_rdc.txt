@@ -1,0 +1,10 @@
+# ============================================
+# AIRTEL RDC (ex-Tigo) - AS37007
+# Plages IPv4 connues
+# A verifier sur bgpview.io/asn/37007
+# ============================================
+
+# Ajoute ici les plages CIDR d'Airtel RDC
+# Tu peux les trouver sur:
+#   https://bgpview.io/asn/37007
+#   https://ipinfo.io/AS37007
