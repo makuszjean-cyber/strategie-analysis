@@ -1,217 +1,232 @@
-# Guide des Commandes - BugScanX Free Surfing
+# Guide des Commandes
 
 ## Structure du Projet
 
 ```
 /workspace/
 ├── data/
-│   ├── cidr/              ← Tes fichiers CIDR (plages IP par operateur)
-│   │   ├── orange_rdc.txt
-│   │   ├── airtel_rdc.txt
-│   │   └── vodacom_rdc.txt
-│   ├── domains/           ← Tes listes de domaines
+│   ├── cidr/              ← Fichiers CIDR (telecharges ou manuels)
+│   │   ├── orange_rdc.txt           # Plages IP Orange RDC (AS37447)
+│   │   ├── cloudflare_cidr.txt      # Genere automatiquement
+│   │   ├── cloudfront_cidr.txt      # Genere automatiquement
+│   │   └── ...
+│   ├── domains/           ← Listes de domaines
 │   │   └── orange_rdc.txt
-│   └── generated/         ← IPs generees automatiquement (par generate_ips.py)
-│       └── (fichiers generes ici)
+│   └── generated/         ← IPs individuelles generees
+│       ├── cloudflare_part0001.txt
+│       ├── cloudflare_part0002.txt
+│       └── ...
 ├── results/               ← Resultats des scans
 ├── scripts/
-│   ├── generate_ips.py    ← Genere les IPs depuis les fichiers CIDR
-│   └── batch_scan.py      ← Lance le scan sur tous les fichiers
-├── BugScanX/              ← Le moteur de scan (ne pas modifier)
-├── docs/
-│   ├── GUIDE_COMMANDES.md ← Ce fichier
-│   └── DOCUMENTATION.md   ← Documentation complete
-└── DOCUMENTATION_FREESURFING.md
+│   ├── generate_cdn_ips.py    ← Genere les IPs des CDN (Cloudflare, AWS, etc.)
+│   ├── generate_ips.py        ← Genere les IPs depuis CIDR locaux
+│   └── batch_scan.py          ← Scanne tous les fichiers d'un dossier
+├── BugScanX/              ← Moteur de scan
+└── docs/                  ← Documentation
 ```
 
 ---
 
-## Etape 1 : Voir les Statistiques (combien d'IPs a scanner)
+## 1. GENERER LES IPs DES CDN
+
+### Voir les stats (combien d'IPs par CDN)
 
 ```bash
+# Tous les CDN par defaut
+python3 scripts/generate_cdn_ips.py --info
+
+# TOUS les CDN (inclut Google + Akamai = des millions)
+python3 scripts/generate_cdn_ips.py --info --all
+
+# Un CDN specifique
+python3 scripts/generate_cdn_ips.py --info --provider cloudflare
+```
+
+### Generer les IPs
+
+```bash
+# Cloudflare seulement (1.5M IPs, ~8h de scan) - COMMENCE PAR CELUI-LA
+python3 scripts/generate_cdn_ips.py --provider cloudflare --split 10000
+
+# Cloudflare + Fastly + Incapsula + Sucuri (les plus petits, ~12h total)
+python3 scripts/generate_cdn_ips.py --provider cloudflare,fastly,incapsula,sucuri --split 10000
+
+# AWS CloudFront (4.2M IPs, ~1 jour)
+python3 scripts/generate_cdn_ips.py --provider cloudfront --split 10000
+
+# Azure CDN seulement (190K IPs, ~1h)
+python3 scripts/generate_cdn_ips.py --provider azure --split 10000
+
+# Google Cloud (38.5M IPs, ~9 jours) - ENORME
+python3 scripts/generate_cdn_ips.py --provider google --split 10000
+
+# Akamai (12.5M IPs, ~3 jours)
+python3 scripts/generate_cdn_ips.py --provider akamai --split 10000
+
+# TOUT (57M+ IPs, ~2 semaines de scan)
+python3 scripts/generate_cdn_ips.py --all --split 10000
+
+# Sauvegarder juste les fichiers CIDR (sans generer les IPs)
+python3 scripts/generate_cdn_ips.py --all --cidr-only
+```
+
+### Providers disponibles
+
+| Provider | IPs | Temps (100 threads) | Priorite |
+|----------|-----|---------------------|----------|
+| `sucuri` | 3.6K | 1 min | Commence ici (test) |
+| `incapsula` | 228K | 1.3h | Haut |
+| `azure` | 190K | 1.1h | Haut |
+| `fastly` | 304K | 1.7h | Haut |
+| `cloudflare` | 1.5M | 8.5h | Tres haut (le meilleur pour bug hosts) |
+| `cloudfront` | 4.2M | 23h | Moyen |
+| `akamai` | 12.5M | 3 jours | Long |
+| `google` | 38.5M | 9 jours | Tres long |
+
+---
+
+## 2. GENERER LES IPs ORANGE RDC (plages locales)
+
+```bash
+# Voir les stats Orange RDC
 python3 scripts/generate_ips.py --info
-```
 
-Cette commande affiche :
-- Le nombre de plages CIDR par operateur
-- Le nombre total d'IPs a scanner
-- Le temps estime pour le scan
-
----
-
-## Etape 2 : Generer les IPs
-
-### Generer TOUTES les IPs (un seul gros fichier)
-
-```bash
-python3 scripts/generate_ips.py
-```
-
-### Generer en decoupant en petits fichiers (RECOMMANDE)
-
-```bash
-# Fichiers de 500 IPs chacun (plus facile a gerer)
+# Generer les IPs Orange RDC
 python3 scripts/generate_ips.py --split 500
-
-# Fichiers de 1000 IPs
-python3 scripts/generate_ips.py --split 1000
-
-# Fichiers de 250 IPs (plus petit = plus facile si tu veux interrompre)
-python3 scripts/generate_ips.py --split 250
-```
-
-### Generer depuis un operateur specifique
-
-```bash
-python3 scripts/generate_ips.py --file orange_rdc.txt
-python3 scripts/generate_ips.py --file orange_rdc.txt --split 500
 ```
 
 ---
 
-## Etape 3 : Scanner
+## 3. SCANNER
 
-### A) Scan Rapide - Mode PING (RECOMMANDE EN PREMIER)
-
-Le mode ping est le plus rapide. Il teste juste si l'IP repond sur un port.
-Commence toujours par la pour eliminer les IPs mortes.
-
-```bash
-# Scanner toutes les IPs generees
-python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443
-
-# Avec plus de threads (plus rapide mais plus agressif)
-python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443 --threads 100
-
-# Scanner les CIDR directement (sans generer les IPs d'abord)
-python3 scripts/batch_scan.py --data-dir data/cidr --mode ping --ports 80,443,8080
-```
-
-### B) Scan HTTP Direct (APRES le ping)
-
-Teste les IPs qui repondent avec des requetes HTTP. Exclut les 302 par defaut.
+### Scan Ping (le plus rapide - COMMENCE TOUJOURS PAR LA)
 
 ```bash
 # Scanner les IPs generees
-python3 scripts/batch_scan.py --data-dir data/generated --mode direct --ports 80,443,8080,8443
+python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443 --threads 100
 
-# Scanner les domaines
-python3 scripts/batch_scan.py --data-dir data/domains --mode direct --ports 80,443,8080
+# Avec plus de ports
+python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443,8080,8443 --threads 100
 
-# Mode DirectNon302 explicite
-python3 scripts/batch_scan.py --data-dir data/generated --mode directnon302 --ports 80,443
-
-# Avec toutes les methodes HTTP
-python3 scripts/batch_scan.py --data-dir data/generated --mode direct --methods GET,HEAD,POST,OPTIONS
+# Scanner directement les fichiers CIDR (sans generer les IPs d'abord)
+python3 scripts/batch_scan.py --data-dir data/cidr --mode ping --ports 80,443
 ```
 
-### C) Scan SSL/SNI
-
-Teste si les hosts acceptent une connexion TLS (utile pour les bug hosts SNI).
+### Scan HTTP Direct
 
 ```bash
-# Scanner les domaines en SSL
-python3 scripts/batch_scan.py --data-dir data/domains --mode ssl --threads 50
+# Mode Direct (exclut les 302 par defaut)
+python3 scripts/batch_scan.py --data-dir data/generated --mode direct --ports 80,443,8080
 
-# Scanner les IPs en SSL
+# DirectNon302 explicite
+python3 scripts/batch_scan.py --data-dir data/generated --mode directnon302 --ports 80,443,8080
+
+# Avec plus de methodes HTTP
+python3 scripts/batch_scan.py --data-dir data/generated --mode direct --methods GET,HEAD,OPTIONS
+```
+
+### Scan SSL/SNI
+
+```bash
 python3 scripts/batch_scan.py --data-dir data/generated --mode ssl --threads 100
+python3 scripts/batch_scan.py --data-dir data/domains --mode ssl
 ```
 
-### D) Scan Proxy
-
-Teste si les hosts fonctionnent comme proxy (le plus important pour le free surfing).
+### Scan Proxy (le plus important pour le free surfing)
 
 ```bash
-# Scan proxy avec payload par defaut
+# Scan proxy standard
 python3 scripts/batch_scan.py --data-dir data/generated --mode proxy --ports 80,8080,3128
 
-# Avec un payload personnalise
+# Avec payload CONNECT
 python3 scripts/batch_scan.py --data-dir data/generated --mode proxy --ports 80,8080 \
     --proxy-payload "CONNECT [host]:443 HTTP/1.1[crlf]Host: [host][crlf][crlf]"
 ```
 
 ---
 
-## Options Completes
+## 4. OPTIONS DU SCANNER
 
 | Option | Description | Defaut |
 |--------|-------------|--------|
 | `--data-dir` | Dossier des fichiers a scanner | `data/generated` |
 | `--output-dir` | Dossier des resultats | `results` |
-| `--mode` | Mode de scan: direct, directnon302, ssl, ping, proxy | `direct` |
-| `--ports` | Ports a tester (virgules) | `80,443,8080,8443` |
-| `--methods` | Methodes HTTP (virgules) | `GET,HEAD` |
+| `--mode` | ping, direct, directnon302, ssl, proxy | `direct` |
+| `--ports` | Ports (virgules) | `80,443,8080,8443` |
+| `--methods` | Methodes HTTP | `GET,HEAD` |
 | `--threads` | Threads paralleles | `50` |
-| `--timeout` | Timeout par requete (secondes) | `3` |
-| `--no302` | Exclure les redirections 302 | `oui` |
-| `--include-302` | Inclure les 302 | `non` |
-| `--files` | Fichiers specifiques (virgules) | tous |
-| `--proxy-target` | Cible pour mode proxy | `in1.wstunnel.site` |
-| `--proxy-payload` | Payload proxy personnalise | websocket |
+| `--timeout` | Timeout (secondes) | `3` |
+| `--files` | Fichiers specifiques | tous |
 
 ---
 
-## Workflow Recommande (du debut a la fin)
+## 5. WORKFLOW COMPLET RECOMMANDE
 
 ```bash
-# 1. Voir combien d'IPs tu vas scanner
-python3 scripts/generate_ips.py --info
+# ETAPE 0 : Installer les dependances
+cd BugScanX && pip install -e . && cd ..
 
-# 2. Generer les IPs en petits fichiers
-python3 scripts/generate_ips.py --split 500
+# ETAPE 1 : Voir les stats
+python3 scripts/generate_cdn_ips.py --info
 
-# 3. Scan ping rapide (eliminer les IPs mortes) - ~5min pour 5000 IPs
+# ETAPE 2 : Commencer petit - generer Sucuri (3600 IPs, test rapide)
+python3 scripts/generate_cdn_ips.py --provider sucuri --split 5000
+
+# ETAPE 3 : Scanner Sucuri (1 minute)
+python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443 --threads 100
+
+# ETAPE 4 : Verifier les resultats
+cat results/RESULTATS_*.txt
+
+# ETAPE 5 : Si ca marche, generer Cloudflare (1.5M IPs)
+python3 scripts/generate_cdn_ips.py --provider cloudflare --split 10000
+
+# ETAPE 6 : Scanner Cloudflare (8h)
 python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443,8080 --threads 100
 
-# 4. Regarder les resultats du ping
-cat results/RESULTATS_*.txt
+# ETAPE 7 : Scanner en mode Direct les resultats positifs
+python3 scripts/batch_scan.py --data-dir data/generated --mode direct --ports 80,443,8080
 
-# 5. Scan HTTP sur les domaines
-python3 scripts/batch_scan.py --data-dir data/domains --mode directnon302 --ports 80,443,8080,8443
-
-# 6. Scan SSL sur les domaines
-python3 scripts/batch_scan.py --data-dir data/domains --mode ssl
-
-# 7. Scan proxy (le plus important)
-python3 scripts/batch_scan.py --data-dir data/generated --mode proxy --ports 80,8080,3128,8888
-
-# 8. Analyser les resultats finaux
-ls -la results/
-cat results/RESULTATS_*.txt
+# ETAPE 8 : Continuer avec les autres CDN...
+python3 scripts/generate_cdn_ips.py --provider fastly,incapsula,azure --split 10000
+python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443,8080 --threads 100
 ```
 
 ---
 
-## Combien de Temps ca Prend ?
+## 6. ANALYSER LES RESULTATS
 
-Le temps depend de :
-- **Nombre d'IPs** x **Nombre de ports** x **Nombre de methodes** = combinaisons
-- **Timeout** (secondes par requete)
-- **Threads** (requetes en parallele)
+```bash
+# Lister les fichiers de resultats
+ls -la results/
 
-**Formule :** `temps ≈ combinaisons × timeout / threads`
+# Voir le resultat combine
+cat results/RESULTATS_*.txt
 
-### Exemples pour Orange RDC (~5500 IPs)
+# Compter les hosts trouves
+wc -l results/*.txt
 
-| Mode | Ports | Threads | Temps estime |
-|------|-------|---------|-------------|
-| ping | 80,443 | 100 | ~3 min |
-| ping | 80,443,8080,8443 | 100 | ~7 min |
-| direct | 80,443 | 50 | ~13 min |
-| direct | 80,443,8080,8443 | 100 | ~13 min |
-| proxy | 80,8080 | 50 | ~7 min |
+# Chercher les codes 200 (les meilleurs)
+grep " 200 " results/*.txt
 
-Tu peux interrompre a tout moment avec **Ctrl+C**. Les resultats deja trouves
-seront sauvegardes.
+# Chercher les codes 101 (WebSocket, excellent)
+grep " 101 " results/*.txt
+```
 
 ---
 
-## Conseils
+## 7. COMBIEN DE TEMPS CA PREND ?
 
-1. **Commence toujours par le ping** : ca elimine 80-90% des IPs mortes
-2. **Utilise `--split 500`** quand tu generes les IPs : si le scan plante, tu ne perds pas tout
-3. **Augmente les threads** (`--threads 100` ou `200`) pour aller plus vite
-4. **Les ports importants** : 80, 443, 8080, 8443, 3128
-5. **Cherche les codes 200 et 101** dans les resultats : ce sont les meilleurs candidats
-6. **Les resultats sont dans** `results/` : chaque scan cree un fichier + un fichier combine
-7. **Relance regulierement** : les bug hosts changent souvent
+**Formule :** `temps = (nombre_IPs x nombre_ports x timeout) / nombre_threads`
+
+| Scenario | IPs | Ports | Threads | Temps |
+|----------|-----|-------|---------|-------|
+| Test rapide Sucuri | 3.6K | 2 | 100 | ~1 min |
+| Incapsula complet | 228K | 3 | 100 | ~2h |
+| Cloudflare complet | 1.5M | 3 | 100 | ~13h |
+| CloudFront complet | 4.2M | 3 | 100 | ~1.5 jours |
+| Google complet | 38.5M | 3 | 100 | ~13 jours |
+| TOUT | 57M | 3 | 100 | ~20 jours |
+
+Tu peux interrompre avec **Ctrl+C** a tout moment. Les resultats deja trouves
+sont sauvegardes.

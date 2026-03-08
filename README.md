@@ -1,39 +1,44 @@
-# Free Surfing Scanner - Orange RDC
+# Free Surfing Scanner
 
-Outil de scan automatise pour trouver des bug hosts en utilisant BugScanX.
+Scan automatise de millions d'IPs CDN (Cloudflare, AWS, Google, Azure, Fastly,
+Akamai, Incapsula, Sucuri) pour trouver des bug hosts.
 
-## Installation rapide
+## Installation
 
 ```bash
 cd BugScanX && pip install -e . && cd ..
 ```
 
-## Utilisation en 3 etapes
+## Utilisation rapide
 
 ```bash
-# 1. Voir combien d'IPs a scanner
-python3 scripts/generate_ips.py --info
+# 1. Voir combien d'IPs par CDN
+python3 scripts/generate_cdn_ips.py --info
 
-# 2. Generer les IPs
-python3 scripts/generate_ips.py --split 500
+# 2. Generer les IPs (Cloudflare = 1.5M IPs)
+python3 scripts/generate_cdn_ips.py --provider cloudflare --split 10000
 
 # 3. Scanner
-python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443,8080
+python3 scripts/batch_scan.py --data-dir data/generated --mode ping --ports 80,443,8080 --threads 100
+
+# 4. Resultats
+cat results/RESULTATS_*.txt
 ```
 
-## Structure
+## Providers CDN
 
-| Dossier | Contenu |
-|---------|---------|
-| `data/cidr/` | Plages CIDR par operateur (Orange, Airtel, Vodacom) |
-| `data/domains/` | Listes de domaines a scanner |
-| `data/generated/` | IPs generees depuis les CIDR |
-| `results/` | Resultats des scans |
-| `scripts/` | Scripts: generate_ips.py + batch_scan.py |
-| `docs/` | Documentation complete + guide des commandes |
-| `BugScanX/` | Moteur de scan |
+| Provider | IPs | Temps scan (100 threads) |
+|----------|-----|--------------------------|
+| Sucuri | 3.6K | 1 min |
+| Incapsula | 228K | 1.3h |
+| Azure | 190K | 1.1h |
+| Fastly | 304K | 1.7h |
+| Cloudflare | 1.5M | 8.5h |
+| CloudFront | 4.2M | 23h |
+| Akamai | 12.5M | 3 jours |
+| Google | 38.5M | 9 jours |
 
 ## Documentation
 
-- [Guide des commandes](docs/GUIDE_COMMANDES.md) - Toutes les commandes disponibles
-- [Documentation complete](docs/DOCUMENTATION.md) - Tout comprendre de A a Z
+- [Guide des commandes](docs/GUIDE_COMMANDES.md)
+- [Documentation complete](docs/DOCUMENTATION.md)
