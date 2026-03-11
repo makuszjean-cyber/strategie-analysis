@@ -1,0 +1,14 @@
+
+Scan Time: 2026-03-11 07:10:09
+File Scanned: results\RESULTATS_20260311_054221_cleaned.txt
+
+Proxy:Port                       Code
+----------                       ----
+104.24.19.5:443                  400
+    HTTP/1.1 400 Bad Request
+    Server: cloudflare
+    Date: Wed, 11 Mar 2026 05:18:11 GMT
+    Content-Type: text/html
+    Content-Length: 155
+    Connection: close
+    CF-RAY: -
