@@ -1,0 +1,5 @@
+cdn.cd
+m.cd
+cloud.cd
+mail.cloud.cd
+ftp.cloud.cd
