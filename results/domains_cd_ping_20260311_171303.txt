@@ -1,0 +1,16 @@
+
+Scan Time: 2026-03-11 17:13:03
+File Scanned: data/domains/domains_cd.txt
+
+Port    IP               Host
+----    --               ----
+443     104.21.12.203    cdn.cd
+80      104.21.12.203    cdn.cd
+443     103.113.92.41    m.cd
+80      103.113.92.41    m.cd
+80      154.72.55.17     ftp.cloud.cd
+443     154.72.55.17     ftp.cloud.cd
+443     154.72.55.17     mail.cloud.cd
+80      154.72.55.17     mail.cloud.cd
+443     154.72.55.17     cloud.cd
+80      154.72.55.17     cloud.cd
