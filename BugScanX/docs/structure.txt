@@ -1,0 +1,55 @@
+bugscan-x/
+├── bugscanx/                                    # Main bugscan-x package directory
+│   ├── modules/                                 # Modules directory
+│   │   ├── others/                              # Other utility modules
+│   │   │   ├── dns_records.py                   # DNS record handling
+│   │   │   ├── file_toolkit.py                  # File handling utilities
+│   │   │   ├── host_info.py                     # Host information retrieval
+│   │   │   ├── help.py                          # Help functionality for scripts
+│   │   │   └── update.py                        # Script updater functionality
+│   │   ├── scanners/                            # Scanners directory 
+│   │   │   ├── scanners/                        # Host Scanner modules
+│   │   │   │   ├── multithread.py               # Multithreading implementation for scanners
+│   │   │   │   ├── base.py                      # Base scanner class
+│   │   │   │   ├── direct.py                    # Direct scanning functionality
+│   │   │   │   ├── ping.py                      # Ping scanning functionality
+│   │   │   │   ├── proxy_check.py               # Proxy checking functionality
+│   │   │   │   ├── proxy_request.py             # Proxy request handling
+│   │   │   │   └── ssl.py                       # SSL scanning functionality
+│   │   │   ├── host_scanner.py                  # Host Scanner entry point
+│   │   │   └── open_port.py                     # Port scanning functionality
+│   │   └── scrapers/                            # Scraper directory
+│   │       ├── ip_lookup/                       # IP lookup functionality
+│   │       │   ├── iplookup.py                  # IP lookup entry point
+│   │       │   ├── logger.py                    # Console interface
+│   │       │   ├── sources.py                   # IP lookup sources implementation
+│   │       │   └── utils.py                     # Utility functions
+│   │       └── subfinder/                       # subfinder directory
+│   │           ├── subfinder.py                 # Subdomain finder entry point
+│   │           ├── logger.py                    # Console interface
+│   │           ├── sources.py                   # Subdomain finder sources implementation
+│   │           └── utils.py                     # Utility functions
+│   ├── utils/                                   # Utility functions directory
+│   │   ├── common.py                            # Common utilities
+│   │   ├── config.py                            # Configuration handling
+│   │   ├── http.py                              # HTTP utilities
+│   │   └── validators.py                        # Input validators
+│   ├── __init__.py                              # Package initialization
+│   ├── handlers.py                              # All modules handlers
+│   └── main.py                                  # Main entry point for bugscan-x
+├── test/                                        # Test suite directory
+│   └── scrapers/                                # Tests for scraper modules
+│       ├── iplookup/                            # IP lookup module tests
+│       │   ├── test_iplookup.py                 # IP lookup functionality tests
+│       │   └── test_sources.py                  # IP lookup sources tests
+│       └── subfinder/                           # Subfinder module tests
+│           ├── test_sources.py                  # Subfinder sources tests
+│           └── test_subfinder.py                # Subfinder functionality tests
+├── docs/                                        # Documentation directory
+│   └── structure.txt                            # Project structure documentation
+├── assets/                                      # Project assets
+├── .github/                                     # GitHub specific files
+├── .gitignore                                   # Git ignore rules
+├── LICENSE                                      # MIT License
+├── README.md                                    # Project documentation
+└── pyproject.toml                               # Project metadata and dependencies

@@ -1,0 +1,6 @@
+
+Scan Time: 2026-03-11 09:35:31
+File Scanned: results\RESULTATS_20260311_054221_cleaned.txt
+
+TLS       IP               SNI
+---       --               ---
